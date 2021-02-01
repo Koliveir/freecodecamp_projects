@@ -4,9 +4,10 @@ body {
     border: 0px;
 }
 main {
-    background-color: cadetblue;
+    background-color:#EEEEEE;
     margin: 10px auto;
     width: 97vw;
+    border-radius: 5px;;
 }
 
 #main {
@@ -25,7 +26,6 @@ main {
     width: 90%;
     height: auto;
     margin: auto;
-    background-color: pink;
     position: relative;
     top: 0;
     right: 0;
@@ -43,17 +43,18 @@ main {
 }
 
 #img-caption {
-    margin: 50px;
+    margin-top: 20px;
     text-align: center;
-    font-size: large;
-
+    font-size: 1.5em;
 }
 
 #tribute-info {
     padding: 20px;
     width: 90vw;
-    margin: 10px auto;
-    background: brown;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #tribute-info h2 {
@@ -71,9 +72,8 @@ li {
 
 #frase {
     margin-top: 30px;
-    background: chartreuse;
-    position: relative;
-    bottom: 0;
+    padding-left: 150px;
+    box-sizing: border-box;
 }
 
 footer {
@@ -81,6 +81,6 @@ footer {
     height: auto;
     position: relative;
     bottom: 0;
-    background-color: silver;
     font-size: large;
+    text-align: center;
 }
