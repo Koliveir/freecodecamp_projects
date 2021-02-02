@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --color-background: #d8e2dc;
+    --titles_font: Roboto;
+    --fontsize-title: 45px;
+    --fontsize-subtitle: 20px;
+    --fontsize-text: 15px;
+}
+
 body {
     padding: 0px;
     margin: 0px;
     border: 0px;
+    font-family: var(--titles_font);
 }
 main {
-    background-color:#EEEEEE;
+    background-color: var(--color-background);
     margin: 10px auto;
     width: 97vw;
     border-radius: 5px;;
@@ -19,7 +30,8 @@ main {
 
 #title {
     text-align: center;
-    margin-top: 10px;
+    font-size: var(--fontsize-title);
+    font-weight: 700;
 }
 
 #img-div {
@@ -37,21 +49,24 @@ main {
     max-width: 80%;
     max-height: auto;
     object-fit: cover;
-    background: black;
     display: block;
     margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
 }
 
 #img-caption {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: var(--fontsize-subtitle);
+    font-weight: 400s;
+    color: hsl(0, 0%, 50%);
 }
 
 #tribute-info {
-    padding: 20px;
+    padding-top: 0;
     width: 90vw;
-    margin: 5px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,18 +77,22 @@ main {
 }
 
 #tribute-info div {
-    margin: auto;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     width: 500px;
 }
 
 li {
     margin-top: 10px;
+    font-size: var(--fontsize-text);
 }
 
 #frase {
-    margin-top: 30px;
     padding-left: 150px;
     box-sizing: border-box;
+    color: hsl(0, 0%, 30%);
 }
 
 footer {
@@ -81,6 +100,56 @@ footer {
     height: auto;
     position: relative;
     bottom: 0;
-    font-size: large;
+    font-size: var(--fontsize-subtitle);
+    color: hsl(0, 0%, 30%);
     text-align: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: indianred;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+    main {
+        margin: 5px;
+    }
+    #main {
+        padding: 2px;
+        margin:0;
+    }
+    #title {
+        font-size: 35px;
+    }
+
+    #image {
+        max-width: 100%;
+    }
+    #img-caption {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    #tribute-info div {
+        width: 340px;
+    }
+    li {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+    #frase {
+        padding-left: 15%;
+    }
+    footer {
+        width: 97vw;
+        font-size: 14px;
+        color: hsl(0, 0%, 30%);
+        text-align: center;
+        padding: 10px;
+    }
+    
 }
