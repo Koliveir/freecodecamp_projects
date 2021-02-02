@@ -2,6 +2,7 @@
 
 :root {
     --color-background: #d8e2dc;
+    --color-titles: #6d6875;
     --titles_font: Roboto;
     --fontsize-title: 45px;
     --fontsize-subtitle: 20px;
@@ -32,6 +33,7 @@ main {
     text-align: center;
     font-size: var(--fontsize-title);
     font-weight: 700;
+    color: var(--color-titles);
 }
 
 #img-div {
@@ -74,6 +76,7 @@ main {
 
 #tribute-info h2 {
     text-align: center;
+    color: var(--color-titles);
 }
 
 #tribute-info div {
@@ -87,6 +90,7 @@ main {
 li {
     margin-top: 10px;
     font-size: var(--fontsize-text);
+    color: hsl(0, 0%, 22%);
 }
 
 #frase {
