@@ -10,8 +10,9 @@ a {
     background-color: teal;
     text-decoration: none;
     color: white;
-    display: block;
     font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a:hover {
@@ -19,8 +20,8 @@ a:hover {
 }
 
 main {
-    width: 500px;
-    height: 500px;
+    width: 375px;
+    height: auto;
     margin: auto;
     position: absolute;
     top: 0;
@@ -28,7 +29,10 @@ main {
     bottom: 0;
     left: 0;
     text-align: center;
+    margin-top: 10px;
 }
  
-#links {
+li {
+    width: 100%;
+    margin-top: 10px;
 }
