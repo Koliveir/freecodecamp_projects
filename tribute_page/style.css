@@ -17,13 +17,13 @@ body {
 }
 main {
     background-color: var(--color-background);
-    margin: 10px auto;
+    margin: 10px;
     width: 97vw;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 #main {
-    width: 90vw;
+    width: 80vw;
     height: 100%;
     padding: 25px;
     margin: 10px auto;
@@ -84,30 +84,56 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    box-sizing: content-box;
+}
+
+#tribute-info ul{
+    padding-bottom: 10px;
+    width: auto;
+    border-radius: 5px;
     width: 500px;
 }
 
-li {
+#tribute-info li {
     margin-top: 10px;
     font-size: var(--fontsize-text);
     color: hsl(0, 0%, 22%);
 }
 
 #frase {
-    padding-left: 150px;
-    box-sizing: border-box;
     color: hsl(0, 0%, 30%);
 }
 
+#frase::before {
+    content: "";
+    width: 150px;
+    height: 3px;
+    display: block;
+    margin: 8px auto;
+    background-color: indianred;
+}
+
+#frase::after {
+    content: "";
+    width: 150px;
+    height: 3px;
+    display: block;
+    margin: 8px auto;
+    background-color: indianred;
+}
+
+#frase h3 {
+    color: var(--color-titles);
+    font-size: var(--fontsize-subtitle);
+}
+
 footer {
-    width: 97vw;
-    height: auto;
     position: relative;
     bottom: 0;
     font-size: var(--fontsize-subtitle);
     color: hsl(0, 0%, 30%);
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 a {
@@ -121,11 +147,12 @@ a:hover {
 
 @media (max-width: 375px) {
     main {
-        margin: 5px;
+        margin: 2px;
     }
     #main {
         padding: 2px;
-        margin:0;
+        margin-left: auto;
+        margin-right: auto;
     }
     #title {
         font-size: 35px;
@@ -138,18 +165,24 @@ a:hover {
         margin-top: 5px;
         font-size: 14px;
     }
-    #tribute-info div {
-        width: 340px;
+    #tribute-info {
+        width: auto;
     }
-    li {
-        margin-top: 8px;
+    #tribute-info ul {
+        padding-left: 18px;
+        width: 280px;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+    #tribute-info li {
+        margin-top: 10px;
         font-size: 12px;
+        width: 100%;
     }
     #frase {
-        padding-left: 15%;
+        margin-bottom: 10px;
     }
     footer {
-        width: 97vw;
         font-size: 14px;
         color: hsl(0, 0%, 30%);
         text-align: center;
