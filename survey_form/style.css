@@ -1,6 +1,8 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 }
 
 header {
@@ -14,10 +16,26 @@ div {
     margin-top: 10%;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 10px;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
-form {
+#survey-form{
     display: flex;
     flex-direction: column;
+}
+
+#survey-form input {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 90%;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+#survey-form span {
+     font-size: 80%
 }
