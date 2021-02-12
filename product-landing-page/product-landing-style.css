@@ -1,5 +1,9 @@
 :root {
-
+      --color-background: #EEEEEE;
+      --color-button: #F1C40F;
+      --color-button-hv: #FF8C00;
+      --color-title-block: #DDDDDD;
+      --color-footer: #DDDDDD;
 }
 
 body, a, li {
@@ -10,6 +14,8 @@ body, a, li {
    list-style: none;
    color: black;
    font-size: 18px;
+   font-family: 'Lato', sans-serif;
+   background-color: var(--color-background);
 }
 
 h1 {
@@ -28,6 +34,7 @@ h1 {
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
+   background-color: var(--color-background);
 }
 
 #header-img {
@@ -70,15 +77,38 @@ h1 {
    font-weight: 600;
    cursor: pointer;
    padding: 2px;
-   background-color: var();
+   background-color: var(--color-button);
 }
 
 #submit::hover {
-   background-color: var();
+   background-color: var(--color-button-hv);
 }
 
+/*INFORMAÇÕES DO SITE*/
 
+#info {
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   background-color: pink;
+}
 
+#info i {
+   font-size: 50px;
+   margin: 50px;
+   width: 50px;
+}
+
+.info {
+   display: flex;
+   max-width: 80%;
+}
+
+.info p {
+   width: 70%;
+}
+
+/* breakpoint */
 @media (max-width: 720px) {
 
    /* Cabeçalho e menus*/
@@ -100,5 +130,7 @@ h1 {
    #form {
       margin-top: 150px;
    }
+
+   /*INFORMAÇÕES DO SITE*/
 
 }
