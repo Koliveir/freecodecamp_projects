@@ -33,7 +33,6 @@ h1 {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   flex-wrap: wrap;
    background-color: var(--color-background);
 }
 
@@ -127,15 +126,22 @@ h1 {
       flex-direction: column;
    }
 
+   #nav-bar {
+      width: 150px;
+      margin-right: auto;
+      margin-left: auto;
+   }
+
    #nav-bar ul {
       flex-direction: column;
       align-items: center;
+      padding: 0;
    }
 
    /*Formulario*/
 
    #form {
-      margin-top: 150px;
+      margin-top: 200px;
    }
 
    /*INFORMAÇÕES DO SITE*/
@@ -144,8 +150,35 @@ h1 {
 
 /* Segundo breakpoint*/
 @media (max-width: 414px) {
-      
+      /* Cabeçalho e menus*/
 
+      #header {
+         height: 150px;
+         padding-top: 20px;
+         display: flex;
+         flex-direction: column;
+
+      }
+   
+      #nav-bar {
+         width: 150px;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 0;
+      }
+
+      #nav-bar ul {
+         padding: 0;
+      }
+   
+      /*Formulario*/
+   
+      #form {
+         margin-top: 180px;
+         text-align: center;
+      }
+   
+      /*INFORMAÇÕES DO SITE*/
    #info i {
       display: none;
    }
