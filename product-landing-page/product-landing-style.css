@@ -86,7 +86,7 @@ h1 {
 /*INFORMAÇÕES DO SITE*/
 
 #info {
-   width: 70vw;
+   width: 64vw;
    margin-top: 40px;
    margin-left: auto;
    margin-right: auto;
@@ -107,7 +107,6 @@ h1 {
    justify-content: space-around;
    align-items: center;
    max-width: 100%;
-
 }
 
 .info div {
