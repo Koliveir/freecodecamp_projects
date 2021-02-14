@@ -78,9 +78,10 @@ h1 {
    cursor: pointer;
    padding: 2px;
    background-color: var(--color-button);
+   transition: .2s;
 }
 
-#submit::hover {
+#submit:hover {
    background-color: var(--color-button-hv);
 }
 
@@ -113,6 +114,8 @@ h1 {
    max-width: 70%;
 }
 
+/* VIDEO*/
+
 #video {
    position: relative;
    top: 0;
@@ -127,6 +130,67 @@ h1 {
 #video iframe {
    width: 100%;
    height: 100%;
+}
+
+/* VALORES */
+
+#valores {
+   width: 60%;
+   height: 400px;
+   margin: 30px auto;
+   display: grid;
+   grid-template-columns: repeat(3, 300px);
+   grid-gap: 20px;
+   justify-content: space-around;
+}
+
+.bloco {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   max-width: 300px;
+   max-height: 300px;
+   border: 2px solid black;
+   box-sizing: border-box;
+}
+
+.bloco h3 {
+   background-color: var(--color-footer);
+   margin: 0;
+   padding: 10px;
+}
+
+.bloco span {
+   font-size: 120%;
+   font-weight: 700;
+   margin: 20px;
+   margin-bottom: 0;
+}
+
+.bloco ul {
+   padding: 0;
+}
+
+.bloco li {
+   margin: 5px;
+}
+
+.bloco input {
+   width: 130px;
+   height: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10px;
+   border-radius: 0;
+   background-color: var(--color-button);
+   font-size: 90%;
+   font-weight: 600;
+   cursor: pointer;
+   transition: .4s; 
+}
+
+.bloco input:hover {
+   background-color: var(--color-button-hv);
 }
 
 /* breakpoint */
@@ -159,8 +223,12 @@ h1 {
       margin-top: 200px;
    }
 
-   /*INFORMAÇÕES DO SITE*/
+   /* VALORES */
 
+   #valores {
+      grid-template-columns: 300px;
+      background-color: pink;
+   }
 }
 
 /* Segundo breakpoint*/
