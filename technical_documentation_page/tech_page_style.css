@@ -9,3 +9,7 @@ body {
     padding: 0;
     border: 0;
 }
+
+pre {
+    background-color: grey;
+}
