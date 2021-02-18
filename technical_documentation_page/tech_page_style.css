@@ -44,6 +44,7 @@ p, li {
     text-align: start;
     overflow-y: auto;
     overflow-x: hidden;
+    z-index: 1;
 }
 
 #navbar li {
@@ -53,7 +54,7 @@ p, li {
     box-sizing: border-box;
 }
 
-#navbar a {
+.nav-link {
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -63,6 +64,7 @@ p, li {
 
 #main-doc {
     grid-area: main;
+    margin-top: 30px;
     padding: 0px 30px;
     width: 90%;
     
@@ -75,4 +77,30 @@ code {
     display: block;
     padding: 10px;
     border-radius: 5px;
+}
+
+@media (max-width: 720px) {
+    body {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "nav" 
+        "main";
+        font-size: 18px;
+    }
+
+    #navbar {
+        position: relative;
+        top: 0;
+        width: 100vw;
+        height: auto;
+        border-right: 0;
+    }
+
+    #navbar ul {
+        height: 250px;
+    }
+
+    #main-doc {
+        border-top: 3px solid #3c6e71;
+        padding: 0px 15px;
 }
