@@ -57,7 +57,34 @@ body {
     height: 450px;
     border-radius: 50%;
     background-color: var(--third-color);
-    z-index: -1;
+    z-index: -2;
+}
+
+#welcome {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -40%;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: var(--second-color);
+    transform: rotate(45deg);
+}
+
+#welcome-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 350px;
+    height: 125px;
+    transform: rotate(-45deg);
+    text-align: center;
+    z-index: 5;
 }
 
 /*breakpoint*/
