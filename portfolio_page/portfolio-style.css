@@ -49,6 +49,11 @@ body {
     font-weight: 700;
 }
 
+main {
+    height: 100vh;
+    width: auto;
+}
+
 #circle {
     position: absolute;
     top: -200px;
@@ -85,6 +90,47 @@ body {
     transform: rotate(-45deg);
     text-align: center;
     z-index: 5;
+    color: var(--first-color);
+}
+
+#retangulo {
+    width: 300px;
+    height: 170px;
+    background-color: var(--third-color);
+    z-index: 6;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 85px;
+    margin: auto;
+    transform: rotate(-35deg);
+}
+
+#triangulo {
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid var(--third-color);
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    z-index: 7;
+    position: absolute;
+    right: 60px;
+    bottom: 50px;
+    margin: auto;
+    transform: rotate(-170deg);
+}
+
+#circle-small {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--second-color);
+    margin: auto;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    z-index: 8;
 }
 
 /*breakpoint*/
