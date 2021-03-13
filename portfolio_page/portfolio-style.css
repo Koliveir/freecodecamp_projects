@@ -141,16 +141,17 @@ section {
 
 .subtitle {
     width: 120px;
-    height: 35px;
-    margin: auto;
-    padding: 2px;
-    text-align: center;
+    height: 39px;
+    padding: 8px;
     box-sizing: border-box;
+    text-align: center;
     background-color: var(--third-color);
     color: var(--first-color);
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: 13px;
+    left: 10px;
+    font-size: 11px;
+    font-weight: 700;
 }
 
 .subtitle h2 {
@@ -165,24 +166,29 @@ section {
     border-radius: 50%;
     background-color: var(--third-color);
     position: relative;
-    top: 50px;
-    left: 50px;
-    z-index: 10;
+    top: 180px;
+    left: -250px;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
 }
 
 #about {
-    width: 500px;
-    height: 400px;
+    width: 550px;
+    height: 480px;
     border-radius: 10px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--second-color);
     color: var(--first-color);
-    z-index: 10;
+    z-index: 11;
     position: relative;
-    left: 120px;
-    bottom: 125px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: -230px;
     margin: auto;
+    box-sizing: border-box;
 }
 /*breakpoint*/
 
