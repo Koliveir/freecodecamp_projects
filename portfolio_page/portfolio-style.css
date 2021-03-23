@@ -210,10 +210,32 @@ section {
     color: var(--first-color);
 }
 
-.port-block {
+.port-block-top {
     width: 280px;
     height: 400px;
     background-color: var(--third-color);
+}
+
+.port-block-bottom {
+    width: 280px;
+    height: 400px;
+    background-color: var(--third-color);
+}
+
+.port-block-top img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.port-block-bottom img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
 }
 
 .title-circle {
@@ -238,6 +260,7 @@ section {
     padding: 71px 0;
     box-sizing: border-box;
 }
+
 
 
 /*breakpoint*/
