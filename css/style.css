@@ -201,8 +201,8 @@ section {
 }
 
 #port-flex {
-    width: 90%;
-    margin: 10% auto;
+    width: 95%;
+    margin: 8% auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
