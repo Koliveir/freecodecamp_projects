@@ -5,6 +5,7 @@
 }
 
 body {
+    width: 99vw;
     margin: 0;
     padding: 0;
     border: 0;
@@ -163,8 +164,8 @@ section {
 }
 
 #circle-about {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     margin: auto;
     border-radius: 50%;
     background-color: var(--third-color);
@@ -177,8 +178,8 @@ section {
 }
 
 #about {
-    width: 550px;
-    height: 480px;
+    width: 650px;
+    height: 560px;
     border-radius: 10px;
     text-align: center;
     padding: 20px;
@@ -186,10 +187,10 @@ section {
     color: var(--first-color);
     z-index: 11;
     position: relative;
-    left: 0;
+    left: 100px;
     bottom: 0;
     right: 0;
-    top: -230px;
+    top: -325px;
     margin: auto;
     box-sizing: border-box;
 }
@@ -200,7 +201,8 @@ section {
 }
 
 #port-flex {
-    margin-top: 100px;
+    width: 90%;
+    margin: 10% auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
